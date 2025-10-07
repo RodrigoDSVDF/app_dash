@@ -1,4 +1,3 @@
-
 import dash
 from dash import dcc
 from dash import html
@@ -8,10 +7,14 @@ import plotly.express as px
 import plotly.graph_objects as go
 
 # Carregar o dataset
-df = pd.read_csv("student_exam_scores.csv")
+[cite_start]df = pd.read_csv("student_exam_scores.csv") [cite: 5]
 
 # Inicializar o aplicativo Dash com um tema escuro do Bootstrap
 app = dash.Dash(__name__, external_stylesheets=[dbc.themes.DARKLY])
+
+# --- LINHA ADICIONADA PARA CORRIGIR O ERRO DE DEPLOY ---
+# Esta linha expõe o servidor Flask subjacente para que o Gunicorn possa encontrá-lo.
+server = app.server
 
 # Estilos CSS personalizados para um visual mais sofisticado
 # e para garantir que o texto das conclusões seja legível no tema escuro
@@ -166,5 +169,3 @@ app.layout = dbc.Container(
 
 if __name__ == '__main__':
    app.run(debug=True, host='0.0.0.0', port=8050)
-
-
