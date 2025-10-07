@@ -1,0 +1,13 @@
+pandas
+matplotlib
+seaborn
+statsmodels
+scipy
+streamlit
+plotly
+
+
+dash
+dash-core-components
+dash-html-components
+dash-bootstrap-components

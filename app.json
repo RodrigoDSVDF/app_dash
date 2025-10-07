@@ -1,0 +1,19 @@
+
+{
+  "name": "Student Exam Performance Dashboard",
+  "description": "Um dashboard interativo para analisar o desempenho de estudantes em exames, construído com Dash e Plotly.",
+  "repository": "https://github.com/your-username/your-repo-name",
+  "keywords": ["dash", "plotly", "python", "data-science", "dashboard", "heroku"],
+  "env": {
+    "PYTHON_VERSION": {
+      "description": "Versão do Python a ser usada",
+      "value": "3.9.18"
+    }
+  },
+  "buildpacks": [
+    {
+      "url": "heroku/python"
+    }
+  ]
+}
+
