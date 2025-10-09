@@ -128,7 +128,7 @@ app.layout = dbc.Container(
                                                             text_auto=True, aspect="auto",
                                                             color_continuous_scale="Viridis"),
                                                 "Matriz de Correlação entre Variáveis")),
-            html.Div("**Conclusão:** A matriz de correlação quantifica a força e a direção das relações lineares entre as variáveis. `hours_studied` tem a correlação mais forte com `exam_score` (0.777), seguido por `previous_scores` (0.431). `attendance_percent` e `sleep_hours` têm correlações positivas mais fracas.",
+            html.Div("Conclusão: A matriz de correlação quantifica a força e a direção das relações lineares entre as variáveis. `hours_studied` tem a correlação mais forte com `exam_score` (0.777), seguido por `previous_scores` (0.431). `attendance_percent` e `sleep_hours` têm correlações positivas mais fracas.",
                      className="graph-conclusion", style=CUSTOM_CSS[".graph-conclusion"])
         ]), className="mb-4", style=CUSTOM_CSS[".card-body"]),
 
@@ -148,7 +148,7 @@ app.layout = dbc.Container(
                                                             labels={"attendance_percent": "Porcentagem de Presença", "exam_score": "Nota do Exame"},
                                                             hover_data=["student_id", "hours_studied", "sleep_hours", "previous_scores"]),
                                                 "Porcentagem de Presença vs Nota do Exame")),
-            html.Div("**Conclusão:** Existe uma correlação positiva entre o percentual de presença e a nota do exame. Estudantes com maior frequência nas aulas tendem a ter notas mais elevadas, sugerindo a importância da participação em sala de aula.",
+            html.Div("Conclusão: Existe uma correlação positiva entre o percentual de presença e a nota do exame. Estudantes com maior frequência nas aulas tendem a ter notas mais elevadas, sugerindo a importância da participação em sala de aula.",
                      className="graph-conclusion", style=CUSTOM_CSS[".graph-conclusion"])
         ]), className="mb-4", style=CUSTOM_CSS[".card-body"]),
 
@@ -158,7 +158,7 @@ app.layout = dbc.Container(
                                                             labels={"previous_scores": "Notas Anteriores", "exam_score": "Nota do Exame"},
                                                             hover_data=["student_id", "hours_studied", "sleep_hours", "attendance_percent"]),
                                                 "Notas Anteriores vs Nota do Exame")),
-            html.Div("**Conclusão:** As notas anteriores dos estudantes mostram uma correlação positiva com a nota do exame atual. Isso indica que o desempenho passado é um bom preditor do desempenho futuro, refletindo a consistência acadêmica.",
+            html.Div("Conclusão: As notas anteriores dos estudantes mostram uma correlação positiva com a nota do exame atual. Isso indica que o desempenho passado é um bom preditor do desempenho futuro, refletindo a consistência acadêmica.",
                      className="graph-conclusion", style=CUSTOM_CSS[".graph-conclusion"])
         ]), className="mb-4", style=CUSTOM_CSS[".card-body"]),
 
